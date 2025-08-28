@@ -1,6 +1,7 @@
 "use client"
 
 import Link from 'next/link'
+import { useState } from 'react'
 import { X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
@@ -30,6 +31,8 @@ const MenuIcon = () => (
 
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -70,15 +73,15 @@ export default function Header() {
           </Button>
 
           <div className="md:hidden">
-            <DropdownMenu>
+            <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <MenuIcon />
+                <Button variant="ghost" size="icon" className="hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0">
+                  {isOpen ? <X className="w-6 h-6" /> : <MenuIcon />}
                   <span className="sr-only">Open menu</span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 bg-black border-border/40" align="end">
-                <DropdownMenuSub>
+                 <DropdownMenuSub>
                    <DropdownMenuSubTrigger>Podcasting</DropdownMenuSubTrigger>
                    <DropdownMenuSubContent className="bg-black border-border/40">
                      <DropdownMenuItem asChild><Link href="#services">Launch Package</Link></DropdownMenuItem>
@@ -92,7 +95,9 @@ export default function Header() {
                 ))}
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                  <Link href="#contact">Book a call</Link>
+                  <Button className="w-full" variant="secondary" asChild>
+                    <Link href="#contact">Book a call</Link>
+                  </Button>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
