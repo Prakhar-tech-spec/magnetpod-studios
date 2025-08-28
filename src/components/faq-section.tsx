@@ -11,7 +11,7 @@ const faqs = [
     answer: "click here",
   },
   {
-    question: "Why do VCs launch podcasts?",
+    question: "Why do founders launch podcasts?",
     answer: "click here",
   },
   {
