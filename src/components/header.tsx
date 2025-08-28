@@ -14,9 +14,9 @@ import {
 
 
 const navLinks = [
-  { href: '#services', label: 'AI Studio' },
-  { href: '#how-it-works', label: 'Clipping' },
-  { href: '#faq', label: 'Case Studies' },
+  { href: '#services', label: 'AI STUDIO' },
+  { href: '#how-it-works', label: 'CLIPPING' },
+  { href: '#faq', label: 'CASE STUDIES' },
 ]
 
 export default function Header() {
@@ -31,10 +31,10 @@ export default function Header() {
           </span>
         </Link>
         
-        <nav className="hidden md:flex items-center gap-1 text-sm bg-black border border-border/40 rounded-full px-2 py-1">
+        <nav className="hidden md:flex items-center gap-1 text-sm bg-black border border-border/60 rounded-full p-1">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="flex items-center gap-1 text-foreground/80 font-light hover:bg-muted/50 hover:text-primary">
+              <Button variant="ghost" className="flex items-center gap-1 text-foreground/80 font-light hover:bg-muted/50 hover:text-primary rounded-full px-3 py-1.5 uppercase tracking-wider text-xs">
                 Podcasting
                 <ChevronDown className="w-4 h-4" />
               </Button>
@@ -50,14 +50,14 @@ export default function Header() {
           </DropdownMenu>
 
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary text-foreground/80 font-light px-3 py-1.5 rounded-full hover:bg-muted/50">
+            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary text-foreground/80 font-light px-3 py-1.5 rounded-full hover:bg-muted/50 uppercase tracking-wider text-xs">
               {link.label}
             </Link>
           ))}
         </nav>
 
         <div className="flex items-center gap-4">
-           <Button className="hidden md:flex rounded-full border border-border/80 hover:border-primary" variant="outline" asChild>
+           <Button className="hidden md:flex rounded-full border border-border/80 hover:border-primary bg-black hover:bg-black uppercase tracking-wider text-xs" variant="outline" asChild>
             <Link href="#contact">Book a call</Link>
           </Button>
 
@@ -81,7 +81,7 @@ export default function Header() {
                   <nav className="flex flex-col gap-4 p-4 text-base">
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild>
-                         <button className="flex justify-between items-center w-full transition-colors hover:text-primary text-foreground/80 font-light">
+                         <button className="flex justify-between items-center w-full transition-colors hover:text-primary text-foreground/80 font-light uppercase tracking-wider text-xs">
                           <span>Podcasting</span>
                           <ChevronDown className="w-4 h-4" />
                         </button>
@@ -97,13 +97,13 @@ export default function Header() {
                     </DropdownMenu>
 
                     {navLinks.map((link) => (
-                      <Link key={link.href} href={link.href} onClick={() => setSheetOpen(false)} className="transition-colors hover:text-primary text-foreground/80 font-light">
+                      <Link key={link.href} href={link.href} onClick={() => setSheetOpen(false)} className="transition-colors hover:text-primary text-foreground/80 font-light uppercase tracking-wider text-xs">
                         {link.label}
                       </Link>
                     ))}
                   </nav>
                   <div className="mt-auto p-4">
-                    <Button variant="secondary" className="w-full" asChild>
+                    <Button variant="secondary" className="w-full uppercase tracking-wider text-xs" asChild>
                       <Link href="#contact">Book a call</Link>
                     </Button>
                   </div>
