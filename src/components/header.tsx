@@ -2,14 +2,21 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
 
 const navLinks = [
-  { href: '#how-it-works', label: 'How It Works' },
-  { href: '#services', label: 'Services' },
-  { href: '#faq', label: 'FAQ' },
+  { href: '#services', label: 'AI Studio' },
+  { href: '#how-it-works', label: 'Clipping' },
+  { href: '#faq', label: 'Case Studies' },
 ]
 
 export default function Header() {
@@ -24,17 +31,34 @@ export default function Header() {
           </span>
         </Link>
         
-        <nav className="hidden md:flex items-center gap-6 text-sm">
+        <nav className="hidden md:flex items-center gap-1 text-sm bg-black/50 border border-border/40 rounded-full px-2 py-1">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="flex items-center gap-1 text-foreground/80 font-light hover:bg-muted/50 hover:text-primary">
+                Podcasting
+                <ChevronDown className="w-4 h-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="bg-black border-border/40">
+              <DropdownMenuItem asChild>
+                <Link href="#services">Launch Package</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="#services">Scale Package</Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary text-foreground/80 font-light">
+            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary text-foreground/80 font-light px-3 py-1.5 rounded-full hover:bg-muted/50">
               {link.label}
             </Link>
           ))}
         </nav>
 
         <div className="flex items-center gap-4">
-           <Button className="hidden md:flex" variant="secondary" asChild>
-            <Link href="#contact">Get a Quote</Link>
+           <Button className="hidden md:flex rounded-full border border-border/80 hover:border-primary" variant="outline" asChild>
+            <Link href="#contact">Book a call</Link>
           </Button>
 
           <div className="md:hidden">
@@ -55,6 +79,23 @@ export default function Header() {
                       </Link>
                   </div>
                   <nav className="flex flex-col gap-4 p-4 text-base">
+                    <DropdownMenu>
+                      <DropdownMenuTrigger asChild>
+                         <button className="flex justify-between items-center w-full transition-colors hover:text-primary text-foreground/80 font-light">
+                          <span>Podcasting</span>
+                          <ChevronDown className="w-4 h-4" />
+                        </button>
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent className="bg-black border-border/40 w-[180px]">
+                        <DropdownMenuItem asChild>
+                          <Link href="#services" onClick={() => setSheetOpen(false)}>Launch Package</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link href="#services" onClick={() => setSheetOpen(false)}>Scale Package</Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+
                     {navLinks.map((link) => (
                       <Link key={link.href} href={link.href} onClick={() => setSheetOpen(false)} className="transition-colors hover:text-primary text-foreground/80 font-light">
                         {link.label}
@@ -63,7 +104,7 @@ export default function Header() {
                   </nav>
                   <div className="mt-auto p-4">
                     <Button variant="secondary" className="w-full" asChild>
-                      <Link href="#contact">Get a Quote</Link>
+                      <Link href="#contact">Book a call</Link>
                     </Button>
                   </div>
                 </div>
