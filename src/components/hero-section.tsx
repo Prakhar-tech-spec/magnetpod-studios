@@ -15,14 +15,6 @@ export default function HeroSection() {
           <p className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl font-light text-foreground/70">
             We're the creative agency that turns your podcast into a must-listen experience. From launch to scale, we handle the production so you can focus on your message.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-4">
-            <Button size="lg" asChild>
-              <Link href="#services">Explore Services</Link>
-            </Button>
-            <Button size="lg" variant="secondary" asChild>
-              <Link href="#contact">Book a Free Call</Link>
-            </Button>
-          </div>
         </div>
       </div>
     </section>
