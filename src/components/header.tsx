@@ -2,8 +2,9 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Squash as Hamburger } from 'hamburger-react'
 import {
   Sheet,
   SheetContent,
@@ -37,10 +38,10 @@ export default function Header() {
           </span>
         </Link>
         
-        <nav className="hidden md:flex items-center gap-4 text-sm bg-black border border-[#333333] rounded-full p-1">
+        <nav className="hidden md:flex items-center gap-6 text-sm bg-black border border-[#333333] rounded-full p-1">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="flex items-center gap-1 text-foreground/80 font-light hover:bg-muted/50 hover:text-primary rounded-full px-4 py-1.5 uppercase tracking-wider text-xs">
+              <Button variant="ghost" className="flex items-center gap-1 text-foreground/80 font-light hover:bg-muted/50 hover:text-primary rounded-full px-5 py-1.5 uppercase tracking-wider text-xs">
                 Podcasting
                 <ChevronDown className="w-4 h-4" />
               </Button>
@@ -56,7 +57,7 @@ export default function Header() {
           </DropdownMenu>
 
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary text-foreground/80 font-light px-4 py-1.5 rounded-full hover:bg-muted/50 uppercase tracking-wider text-xs">
+            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary text-foreground/80 font-light px-5 py-1.5 rounded-full hover:bg-muted/50 uppercase tracking-wider text-xs">
               {link.label}
             </Link>
           ))}
@@ -70,10 +71,10 @@ export default function Header() {
           <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
+                <button>
+                  <Hamburger toggled={isSheetOpen} toggle={setSheetOpen} size={24} />
                   <span className="sr-only">Open menu</span>
-                </Button>
+                </button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[240px] bg-black">
                 <SheetHeader className="p-4 border-b border-border/40">
