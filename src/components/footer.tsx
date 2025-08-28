@@ -10,7 +10,9 @@ export default function FooterSection() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-normal text-primary">MagnetPod Studios</h3>
+            <h3 className="text-2xl font-normal text-primary">
+              MagnetPod <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8e97fe] to-[#23264a]">Studios</span>
+            </h3>
             <p className="mt-4 text-base font-light text-foreground/60">
               Your partner in creating unforgettable audio experiences.
             </p>

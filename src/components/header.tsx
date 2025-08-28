@@ -19,7 +19,9 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black/80 backdrop-blur-lg">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-xl font-normal tracking-tight text-primary">MagnetPod Studios</span>
+          <span className="text-xl font-normal tracking-tight text-primary">
+            MagnetPod <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8e97fe] to-[#23264a]">Studios</span>
+          </span>
         </Link>
         
         <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -47,7 +49,9 @@ export default function Header() {
                 <div className="flex flex-col h-full">
                   <div className="flex justify-between items-center p-4 border-b border-border/40">
                      <Link href="/" className="flex items-center gap-2" onClick={() => setSheetOpen(false)}>
-                        <span className="text-lg font-normal tracking-tight text-primary">MagnetPod Studios</span>
+                        <span className="text-lg font-normal tracking-tight text-primary">
+                          MagnetPod <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8e97fe] to-[#23264a]">Studios</span>
+                        </span>
                       </Link>
                   </div>
                   <nav className="flex flex-col gap-4 p-4 text-base">
