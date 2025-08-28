@@ -31,7 +31,7 @@ export default function Header() {
           </span>
         </Link>
         
-        <nav className="hidden md:flex items-center gap-1 text-sm bg-black border border-border/60 rounded-full p-1">
+        <nav className="hidden md:flex items-center gap-1 text-sm bg-black border border-[#333333] rounded-full p-1">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="flex items-center gap-1 text-foreground/80 font-light hover:bg-muted/50 hover:text-primary rounded-full px-3 py-1.5 uppercase tracking-wider text-xs">
