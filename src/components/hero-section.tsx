@@ -10,7 +10,7 @@ export default function HeroSection() {
         <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-primary/20 rounded-full filter blur-3xl opacity-40 animate-blob animation-delay-2000"></div>
         
         <div className="absolute top-1/2 -translate-y-1/2 left-4 sm:left-6 lg:left-8 animate-float animation-delay-4000">
-            <Badge variant="secondary" className="text-sm font-light">Tech Founders</Badge>
+            <Badge variant="default" className="text-sm font-light">Tech Founders</Badge>
         </div>
 
         <div className="text-center py-24 sm:py-32 lg:py-48">
