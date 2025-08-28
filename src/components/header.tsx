@@ -1,21 +1,17 @@
 "use client"
 
-import { useState } from 'react'
 import Link from 'next/link'
 import { X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from '@/components/ui/sheet'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
+  DropdownMenuSub,
+  DropdownMenuSubTrigger,
+  DropdownMenuSubContent
 } from "@/components/ui/dropdown-menu"
 
 
@@ -34,8 +30,6 @@ const MenuIcon = () => (
 
 
 export default function Header() {
-  const [isSheetOpen, setSheetOpen] = useState(false)
-
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black">
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -76,55 +70,32 @@ export default function Header() {
           </Button>
 
           <div className="md:hidden">
-            <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
-              <SheetTrigger asChild>
-                <button onClick={() => setSheetOpen(true)}>
-                  {isSheetOpen ? <X /> : <MenuIcon />}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <MenuIcon />
                   <span className="sr-only">Open menu</span>
-                </button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-[240px] bg-black">
-                <SheetHeader className="p-4 border-b border-border/40">
-                  <SheetTitle className="sr-only">Menu</SheetTitle>
-                   <Link href="/" className="flex items-center gap-2" onClick={() => setSheetOpen(false)}>
-                      <span className="text-lg font-normal tracking-tight text-primary">
-                        MagnetPod <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8e97fe] to-[#23264a]">Studios</span>
-                      </span>
-                    </Link>
-                </SheetHeader>
-                <div className="flex flex-col h-full">
-                  <nav className="flex flex-col gap-4 p-4 text-base">
-                    <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                         <button className="flex justify-between items-center w-full transition-colors hover:text-primary text-foreground/80 font-light uppercase tracking-wider text-xs">
-                          <span>Podcasting</span>
-                          <ChevronDown className="w-4 h-4" />
-                        </button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent className="bg-black border-border/40 w-[180px]">
-                        <DropdownMenuItem asChild>
-                          <Link href="#services" onClick={() => setSheetOpen(false)}>Launch Package</Link>
-                        </DropdownMenuItem>
-                        <DropdownMenuItem asChild>
-                          <Link href="#services" onClick={() => setSheetOpen(false)}>Scale Package</Link>
-                        </DropdownMenuItem>
-                      </DropdownMenuContent>
-                    </DropdownMenu>
-
-                    {navLinks.map((link) => (
-                      <Link key={link.href} href={link.href} onClick={() => setSheetOpen(false)} className="transition-colors hover:text-primary text-foreground/80 font-light uppercase tracking-wider text-xs">
-                        {link.label}
-                      </Link>
-                    ))}
-                  </nav>
-                  <div className="mt-auto p-4">
-                    <Button variant="secondary" className="w-full uppercase tracking-wider text-xs" asChild>
-                      <Link href="#contact">Book a call</Link>
-                    </Button>
-                  </div>
-                </div>
-              </SheetContent>
-            </Sheet>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56 bg-black border-border/40" align="end">
+                <DropdownMenuSub>
+                   <DropdownMenuSubTrigger>Podcasting</DropdownMenuSubTrigger>
+                   <DropdownMenuSubContent className="bg-black border-border/40">
+                     <DropdownMenuItem asChild><Link href="#services">Launch Package</Link></DropdownMenuItem>
+                     <DropdownMenuItem asChild><Link href="#services">Scale Package</Link></DropdownMenuItem>
+                   </DropdownMenuSubContent>
+                </DropdownMenuSub>
+                {navLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link href={link.href}>{link.label}</Link>
+                  </DropdownMenuItem>
+                ))}
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link href="#contact">Book a call</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
