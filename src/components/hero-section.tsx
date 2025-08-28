@@ -39,12 +39,12 @@ export default function HeroSection() {
 
         {/* Decorative elements */}
         <Star className="absolute top-[20%] left-[15%] opacity-80 animate-float" />
-        <div className="absolute top-[25%] right-[10%] w-2 h-2 bg-white/50 rounded-full animate-float"></div>
-        <Triangle className="absolute top-1/2 left-[5%] opacity-60 animate-float hidden sm:block" />
+        <div className="absolute top-[25%] right-[10%] w-2 h-2 bg-white/50 rounded-full animate-float animation-delay-2000"></div>
+        <Triangle className="absolute top-1/2 left-[5%] opacity-60 animate-float animation-delay-4000 hidden sm:block" />
         <Triangle className="absolute bottom-[15%] right-[10%] opacity-60 rotate-45 animate-float hidden sm:block" />
-        <div className="absolute bottom-[10%] left-[20%] w-1.5 h-1.5 bg-white/50 rounded-full animate-float"></div>
+        <div className="absolute bottom-[10%] left-[20%] w-1.5 h-1.5 bg-white/50 rounded-full animate-float animation-delay-4000"></div>
 
-        <div className="block absolute top-[15%] left-4 sm:top-1/2 sm:-translate-y-1/2 sm:left-6 lg:left-8 animate-float">
+        <div className="block absolute top-[15%] left-4 sm:top-1/2 sm:-translate-y-1/2 sm:left-6 lg:left-8 animate-float animation-delay-2000">
             <Badge variant="default" className="text-xs sm:text-sm font-light" style={{ backgroundColor: '#f0917e', color: 'black' }}>Tech Founders</Badge>
         </div>
 
