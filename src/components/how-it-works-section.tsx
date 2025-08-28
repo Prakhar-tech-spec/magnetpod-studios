@@ -4,17 +4,17 @@ import { Mic, Scissors, Rocket } from "lucide-react"
 const steps = [
   {
     icon: <Mic className="w-8 h-8 text-primary" />,
-    title: "1. Record 🎙️",
+    title: "1. Record",
     description: "You do what you do best — record your podcast. No extra effort needed. Just send us the raw audio/video.",
   },
   {
     icon: <Scissors className="w-8 h-8 text-secondary" />,
-    title: "2. Repurpose ✂️",
+    title: "2. Repurpose",
     description: "Our team edits your full episode and transforms it into 20+ short, branded clips + written LinkedIn posts designed to get engagement and attract clients.",
   },
   {
     icon: <Rocket className="w-8 h-8" style={{color: '#8acc98'}}/>,
-    title: "3. Distribute 🚀",
+    title: "3. Distribute",
     description: "We publish and schedule your content across LinkedIn, YouTube, TikTok, Instagram (or wherever your audience hangs out). You stay consistent without lifting a finger.",
   },
 ]
