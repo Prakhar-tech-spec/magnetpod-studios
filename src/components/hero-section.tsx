@@ -1,6 +1,4 @@
 import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
 
 export default function HeroSection() {
   return (
@@ -10,7 +8,11 @@ export default function HeroSection() {
         <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-primary/20 rounded-full filter blur-3xl opacity-40 animate-blob animation-delay-2000"></div>
         
         <div className="absolute top-1/2 -translate-y-1/2 left-4 sm:left-6 lg:left-8 animate-float animation-delay-4000">
-            <Badge variant="default" className="text-sm font-light">Tech Founders</Badge>
+            <Badge variant="default" className="text-sm font-light" style={{ backgroundColor: '#f0917e', color: 'black' }}>Tech Founders</Badge>
+        </div>
+
+        <div className="absolute top-1/4 -translate-y-1/4 right-4 sm:right-6 lg:right-8 animate-float">
+            <Badge variant="default" className="text-sm font-light" style={{ backgroundColor: '#fadf7c', color: 'black' }}>General Partners</Badge>
         </div>
 
         <div className="text-center py-24 sm:py-32 lg:py-48">
