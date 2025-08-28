@@ -53,9 +53,11 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-black text-foreground;
-    scroll-behavior: smooth;
     overscroll-behavior-y: none;
   }
 }
