@@ -4,13 +4,11 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Squash as Hamburger } from 'hamburger-react'
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
 } from '@/components/ui/sheet'
 import {
   DropdownMenu,
@@ -25,6 +23,14 @@ const navLinks = [
   { href: '#how-it-works', label: 'CLIPPING' },
   { href: '#faq', label: 'CASE STUDIES' },
 ]
+
+const MenuIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 8H20" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M4 16H20" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+
 
 export default function Header() {
   const [isSheetOpen, setSheetOpen] = useState(false)
@@ -71,8 +77,8 @@ export default function Header() {
           <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
               <SheetTrigger asChild>
-                <button>
-                  <Hamburger toggled={isSheetOpen} toggle={setSheetOpen} size={24} />
+                <button onClick={() => setSheetOpen(true)}>
+                  {isSheetOpen ? <X /> : <MenuIcon />}
                   <span className="sr-only">Open menu</span>
                 </button>
               </SheetTrigger>
