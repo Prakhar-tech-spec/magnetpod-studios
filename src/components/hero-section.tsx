@@ -17,7 +17,7 @@ export default function HeroSection() {
         </div>
 
         <div className="text-center py-24 sm:py-32 lg:py-40">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-foreground/90 leading-tight flex flex-col items-center gap-4">
+          <h1 className="text-3xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-foreground/90 leading-tight flex flex-col items-center gap-4">
             <span className="relative inline-block bg-gradient-to-r from-secondary/40 to-secondary/10 pl-8 pr-6 py-2 border-l-4 border-secondary">
               Podcasting For Founders
             </span>
