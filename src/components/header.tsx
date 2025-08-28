@@ -57,7 +57,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-           <Button className="hidden md:flex rounded-full border border-border/80 bg-black hover:bg-secondary hover:text-secondary-foreground uppercase tracking-wider text-xs" variant="outline" asChild>
+           <Button className="hidden md:flex rounded-full border border-white/80 bg-black hover:bg-secondary hover:text-secondary-foreground uppercase tracking-wider text-xs" variant="outline" asChild>
             <Link href="#contact">Book a call</Link>
           </Button>
 
