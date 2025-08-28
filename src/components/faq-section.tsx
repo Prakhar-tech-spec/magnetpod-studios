@@ -7,24 +7,36 @@ import {
 
 const faqs = [
   {
-    question: "How long does it take to launch a new podcast?",
-    answer: "Our 'Launch' package is designed to get your podcast live within 4-6 weeks from our initial strategy session. This includes concept development, creating assets, and producing the first batch of episodes.",
+    question: "What exactly does Atomik Growth do, and how is it different from other podcast agencies?",
+    answer: "click here",
   },
   {
-    question: "Do I need my own equipment?",
-    answer: "You will need a quality microphone, but we can provide recommendations based on your budget. We handle everything else related to production and editing to ensure your audio sounds professional.",
+    question: "Why do VCs launch podcasts?",
+    answer: "click here",
   },
   {
-    question: "Can you help me get sponsors for my podcast?",
-    answer: "While our primary focus is on production and content strategy, our 'Scale' package includes audience growth strategies that make your podcast more attractive to sponsors. We can offer guidance on how to approach monetization.",
+    question: "What distinguishes an episode that gets traction from one that doesn’t?",
+    answer: "click here",
   },
   {
-    question: "What if I already have a podcast?",
-    answer: "Our 'Scale' package is perfect for existing podcasters who want to improve their quality, offload production work, and amplify their content's reach. We can jump in at any stage of your podcasting journey.",
+    question: "Do you handle recording logistics if we prefer in-person interviews?",
+    answer: "click here",
   },
   {
-    question: "How do you measure the success of a podcast?",
-    answer: "Success is measured by more than just download numbers. We track audience growth, listener engagement, and how effectively the podcast is driving your business goals. We provide regular reports to keep you informed.",
+    question: "What if we plan to record remotely—what platforms or tools do you recommend, and how do you ensure video/audio quality?",
+    answer: "click here",
+  },
+  {
+    question: "How does the end-to-end process work— from guest booking to final distribution?",
+    answer: "click here",
+  },
+  {
+    question: "What’s the typical turnaround time for each episode—from recording to going live?",
+    answer: "click here",
+  },
+  {
+    question: "What are your pricing structures?",
+    answer: "click here",
   },
 ]
 
