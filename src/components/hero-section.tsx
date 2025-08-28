@@ -17,7 +17,7 @@ export default function HeroSection() {
 
         <div className="text-center py-24 sm:py-32 lg:py-48">
           <h1 className="text-4xl sm:text-6xl lg:text-8xl font-normal tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-foreground to-foreground/60 leading-tight">
-            <span className="whitespace-nowrap">Podcasting for Founders</span>
+            <span>Podcasting for Founders</span>
             <span className="block text-primary">& Coaches</span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl font-light text-foreground/70">
