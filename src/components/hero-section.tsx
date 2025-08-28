@@ -18,10 +18,10 @@ export default function HeroSection() {
 
         <div className="text-center py-24 sm:py-32 lg:py-40">
           <h1 className="text-3xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-foreground/90 leading-tight flex flex-col items-center gap-4">
-            <span className="relative inline-block bg-gradient-to-r from-secondary/40 to-secondary/10 pl-8 pr-6 py-2 border-l-4 border-secondary">
+            <span className="relative inline-block bg-gradient-to-r from-secondary/40 to-secondary/10 px-4 sm:pl-8 sm:pr-6 py-2 border-l-4 border-secondary">
               Podcasting For Founders
             </span>
-            <span className="relative inline-block bg-gradient-to-r from-primary/40 to-primary/10 pl-8 pr-6 py-2 border-l-4 border-primary">
+            <span className="relative inline-block bg-gradient-to-r from-primary/40 to-primary/10 px-4 sm:pl-8 sm:pr-6 py-2 border-l-4 border-primary">
               & Coaches
               <Zap className="absolute right-[-2.5rem] top-1/2 -translate-y-1/2 w-8 h-8 text-primary hidden sm:inline-block" />
             </span>
