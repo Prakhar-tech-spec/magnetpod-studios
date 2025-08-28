@@ -60,6 +60,10 @@
     @apply bg-black text-foreground;
     overscroll-behavior-y: none;
   }
+  ::selection {
+    background-color: #f0927d;
+    color: black;
+  }
 }
 
 .animation-delay-2000 {
