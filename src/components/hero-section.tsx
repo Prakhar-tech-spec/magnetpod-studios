@@ -13,7 +13,7 @@ export default function HeroSection() {
             <span className="block text-primary">& Coaches</span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl font-light text-foreground/70">
-            We're the creative agency that turns your podcast into a must-listen experience. From launch to scale, we handle the production so you can focus on your message.
+            We help venture capital funds and tech companies scale content strategies to attract quality deal flow and deepen relationships, either by starting a new podcast or optimizing an existing one.
           </p>
         </div>
       </div>
