@@ -7,11 +7,11 @@ export default function HeroSection() {
         <div className="absolute -top-20 -left-20 w-64 h-64 bg-secondary/20 rounded-full filter blur-3xl opacity-40 animate-blob"></div>
         <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-primary/20 rounded-full filter blur-3xl opacity-40 animate-blob animation-delay-2000"></div>
         
-        <div className="absolute top-1/2 -translate-y-1/2 left-4 sm:left-6 lg:left-8 animate-float animation-delay-4000">
+        <div className="hidden sm:block absolute top-1/2 -translate-y-1/2 left-4 sm:left-6 lg:left-8 animate-float animation-delay-4000">
             <Badge variant="default" className="text-sm font-light" style={{ backgroundColor: '#f0917e', color: 'black' }}>Tech Founders</Badge>
         </div>
 
-        <div className="absolute top-1/4 -translate-y-1/4 right-4 sm:right-6 lg:right-8 animate-float sm:top-1/4">
+        <div className="hidden sm:block absolute top-1/4 -translate-y-1/4 right-4 sm:right-6 lg:right-8 animate-float sm:top-1/4">
             <Badge variant="default" className="text-sm font-light" style={{ backgroundColor: '#fadf7c', color: 'black' }}>General Partners</Badge>
         </div>
 
