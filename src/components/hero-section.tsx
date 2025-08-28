@@ -11,7 +11,7 @@ export default function HeroSection() {
             <Badge variant="default" className="text-sm font-light" style={{ backgroundColor: '#f0917e', color: 'black' }}>Tech Founders</Badge>
         </div>
 
-        <div className="absolute top-1/4 -translate-y-1/4 right-4 sm:right-6 lg:right-8 animate-float">
+        <div className="absolute top-1/4 -translate-y-1/4 right-4 sm:right-6 lg:right-8 animate-float sm:top-1/4">
             <Badge variant="default" className="text-sm font-light" style={{ backgroundColor: '#fadf7c', color: 'black' }}>General Partners</Badge>
         </div>
 
