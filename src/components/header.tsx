@@ -4,7 +4,13 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -70,14 +76,15 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[240px] bg-black">
+                <SheetHeader className="p-4 border-b border-border/40">
+                  <SheetTitle className="sr-only">Menu</SheetTitle>
+                   <Link href="/" className="flex items-center gap-2" onClick={() => setSheetOpen(false)}>
+                      <span className="text-lg font-normal tracking-tight text-primary">
+                        MagnetPod <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8e97fe] to-[#23264a]">Studios</span>
+                      </span>
+                    </Link>
+                </SheetHeader>
                 <div className="flex flex-col h-full">
-                  <div className="flex justify-between items-center p-4 border-b border-border/40">
-                     <Link href="/" className="flex items-center gap-2" onClick={() => setSheetOpen(false)}>
-                        <span className="text-lg font-normal tracking-tight text-primary">
-                          MagnetPod <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8e97fe] to-[#23264a]">Studios</span>
-                        </span>
-                      </Link>
-                  </div>
                   <nav className="flex flex-col gap-4 p-4 text-base">
                     <DropdownMenu>
                       <DropdownMenuTrigger asChild>
