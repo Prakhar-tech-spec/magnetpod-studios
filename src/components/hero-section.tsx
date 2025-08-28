@@ -44,12 +44,12 @@ export default function HeroSection() {
         <Triangle className="absolute bottom-[15%] right-[10%] opacity-60 rotate-45 animate-float animation-delay-2000 hidden sm:block" />
         <div className="absolute bottom-[10%] left-[20%] w-1.5 h-1.5 bg-white/50 rounded-full animate-float animation-delay-4000"></div>
 
-        <div className="hidden sm:block absolute top-1/2 -translate-y-1/2 left-4 sm:left-6 lg:left-8 animate-float animation-delay-4000">
-            <Badge variant="default" className="text-sm font-light" style={{ backgroundColor: '#f0917e', color: 'black' }}>Tech Founders</Badge>
+        <div className="block absolute top-[15%] left-4 sm:top-1/2 sm:-translate-y-1/2 sm:left-6 lg:left-8 animate-float animation-delay-4000">
+            <Badge variant="default" className="text-xs sm:text-sm font-light" style={{ backgroundColor: '#f0917e', color: 'black' }}>Tech Founders</Badge>
         </div>
 
-        <div className="hidden sm:block absolute top-1/4 right-4 sm:right-6 lg:right-8 animate-float">
-             <Badge variant="default" className="text-sm font-light" style={{ backgroundColor: '#fadf7c', color: 'black' }}>General Partners</Badge>
+        <div className="block absolute top-[15%] right-4 sm:top-1/4 sm:right-6 lg:right-8 animate-float">
+             <Badge variant="default" className="text-xs sm:text-sm font-light" style={{ backgroundColor: '#fadf7c', color: 'black' }}>General Partners</Badge>
         </div>
 
         <div className="text-center py-24 sm:py-32 lg:py-40">
