@@ -5,20 +5,16 @@ import { Check } from 'lucide-react'
 import Link from "next/link"
 
 const launchFeatures = [
-  "Strategy & Concept Development",
-  "Cover Art & Music Selection",
-  "Recording & Editing for 4 Episodes",
-  "Show Notes & Transcriptions",
-  "Distribution to All Major Platforms",
+  "Full podcast editing (1–2 hrs per episode)",
+  "10 short clips per episode (social-ready)",
+  "Upload-ready final episode",
 ]
 
 const scaleFeatures = [
-  "Everything in Launch, plus:",
-  "Weekly Episode Production",
-  "Advanced Audio Engineering",
-  "Video Podcast Production",
-  "Social Media Content Creation",
-  "Audience Growth Strategy",
+  "Full podcast editing (1–2 hrs per episode)",
+  "20+ short clips per episode",
+  "3–5 LinkedIn posts/week derived from episodes",
+  "Posting & scheduling across socials",
 ]
 
 export default function ServicePackagesSection() {
@@ -35,9 +31,9 @@ export default function ServicePackagesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="flex flex-col bg-card border-border/50">
             <CardHeader>
-              <Badge variant="outline" className="w-fit" style={{borderColor: '#8acc98', color: '#8acc98'}}>For New Podcasters</Badge>
               <CardTitle className="font-normal pt-4">Launch</CardTitle>
-              <CardDescription className="font-light text-foreground/60 pt-1">Everything you need to get your podcast off the ground with a professional touch.</CardDescription>
+              <p className="text-2xl font-bold pt-2">$1,200/month</p>
+              <CardDescription className="font-light text-foreground/60 pt-1">Ideal for founders or coaches just starting to repurpose their podcast.</CardDescription>
             </CardHeader>
             <CardContent className="flex-grow">
               <ul className="space-y-3">
@@ -57,9 +53,9 @@ export default function ServicePackagesSection() {
           <Card className="flex flex-col bg-card border-primary/70 ring-2 ring-primary/20 relative">
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">Most Popular</Badge>
             <CardHeader>
-              <Badge variant="outline" className="w-fit" style={{borderColor: '#f0917e', color: '#f0917e'}}>For Established Podcasters</Badge>
-              <CardTitle className="font-normal pt-4">Scale</CardTitle>
-              <CardDescription className="font-light text-foreground/60 pt-1">A comprehensive solution to grow your show and turn it into a content machine.</CardDescription>
+              <CardTitle className="font-normal pt-4">Scaling</CardTitle>
+              <p className="text-2xl font-bold pt-2">$1,800/month</p>
+              <CardDescription className="font-light text-foreground/60 pt-1">Best for founders or coaches who want consistent content and audience growth.</CardDescription>
             </CardHeader>
             <CardContent className="flex-grow">
               <ul className="space-y-3">
@@ -72,7 +68,7 @@ export default function ServicePackagesSection() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className="w-full" asChild><Link href="#contact">Choose Scale</Link></Button>
+              <Button className="w-full" asChild><Link href="#contact">Choose Scaling</Link></Button>
             </CardFooter>
           </Card>
         </div>
