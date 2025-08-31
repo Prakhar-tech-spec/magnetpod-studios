@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: "What if we plan to record remotely—what platforms or tools do you recommend, and how do you ensure video/audio quality?",
-    answer: "click here",
+    answer: "For remote recordings, we recommend platforms like Riverside or SquadCast for optimal audio and video quality. In a studio setting, our project managers collaborate with the production team to conduct thorough equipment checks, ensuring smooth recordings.",
   },
   {
     question: "How does the end-to-end process work— from guest booking to final distribution?",
