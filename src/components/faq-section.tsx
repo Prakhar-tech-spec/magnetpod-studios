@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: "What are your pricing structures?",
-    answer: "click here",
+    answer: "We tailor our plans to fit each podcast’s budget, with end-to-end production starting at $1,200/month.",
   },
 ]
 
