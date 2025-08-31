@@ -25,7 +25,15 @@ const faqs = [
   },
   {
     question: "How does the end-to-end process work— from guest booking to final distribution?",
-    answer: "click here",
+    answer: (
+      <ul className="list-disc list-inside space-y-2">
+        <li>Podcast Editing (polish full episodes, audio mastering)</li>
+        <li>Clip Creation (shorts, reels, highlights)</li>
+        <li>Publishing (full episode on YouTube & podcast platforms)</li>
+        <li>Social Posting (clips on LinkedIn, Instagram, TikTok, Twitter/X)</li>
+        <li>Grey-Hat Distribution (boost reach with smart, non-traditional tactics)</li>
+      </ul>
+    ),
   },
   {
     question: "What’s the typical turnaround time for each episode—from recording to going live?",
