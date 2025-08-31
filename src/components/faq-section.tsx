@@ -8,7 +8,7 @@ import { ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
-    question: "What exactly does Atomik Growth do, and how is it different from other podcast agencies?",
+    question: "What exactly does MagnetPod Studios do, and how is it different from other podcast agencies?",
     answer: "click here",
   },
   {
