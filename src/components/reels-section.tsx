@@ -14,9 +14,9 @@ export default function ReelsSection() {
             We transform your long-form content into engaging, short-form videos ready for social media.
           </p>
         </div>
-        <div className="flex justify-center items-center gap-8">
+        <div className="relative h-[550px] flex justify-center items-center">
           {/* Left Mockup */}
-          <div className="relative w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20">
+          <div className="absolute w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20 transform -rotate-12 -translate-x-40">
             <div className="w-full h-full bg-black rounded-[26px] overflow-hidden">
               <Image
                 src="https://picsum.photos/270/480?random=1"
@@ -44,7 +44,7 @@ export default function ReelsSection() {
           </div>
 
           {/* Right Mockup */}
-          <div className="relative w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20">
+          <div className="absolute w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20 transform rotate-12 translate-x-40">
             <div className="w-full h-full bg-black rounded-[26px] overflow-hidden">
               <Image
                 src="https://picsum.photos/270/480?random=3"
