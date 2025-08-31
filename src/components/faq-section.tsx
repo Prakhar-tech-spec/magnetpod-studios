@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "Why do founders launch podcasts?",
-    answer: "click here",
+    answer: "Founders work with us primarily to demonstrate thought leadership, deepen relationships and drive quality deal flow",
   },
   {
     question: "What distinguishes an episode that gets traction from one that doesn’t?",
