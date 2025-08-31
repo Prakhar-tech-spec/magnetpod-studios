@@ -20,10 +20,6 @@ const faqs = [
     answer: "Two things make a great podcast: guest quality and conversation quality. The gap in between? That’s where we shine—handling everything from repurposing content for LinkedIn and X, and grey-hat distribution strategies.",
   },
   {
-    question: "Do you handle recording logistics if we prefer in-person interviews?",
-    answer: "click here",
-  },
-  {
     question: "What if we plan to record remotely—what platforms or tools do you recommend, and how do you ensure video/audio quality?",
     answer: "click here",
   },
