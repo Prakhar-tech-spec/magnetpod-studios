@@ -27,7 +27,7 @@ export default function FooterSection() {
             </div>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4">
+          <div className="flex flex-wrap gap-x-8 gap-y-4">
             {footerNavLinks.map((link) => (
               <Link key={`${link.href}-${link.label}`} href={link.href} className="text-foreground/80 hover:text-primary transition-colors font-light text-sm">
                 {link.label}
