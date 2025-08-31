@@ -5,26 +5,24 @@ import { Check, Rocket, TrendingUp } from 'lucide-react'
 import Link from "next/link"
 
 const launchFeatures = [
-  "Podcast Editing – professional edit of 1–2 hr episodes (audio + video polish)",
-  "YouTube Upload – formatted and ready for channel growth",
-  "Clip Creation – 10 engaging short clips per episode (Reels, Shorts, LinkedIn, FB)",
-  "Repurposed Reels – optimized for vertical platforms",
-  "Social Captions – written copy for every clip/post",
-  "LinkedIn Posts – 2–3 posts per episode (thought-leadership style)",
-  "Content Calendar – clear schedule for when/where to post",
-  "Support – quick revisions via email/chat",
+  "Professional Podcast Editing (1-2 hr episodes)",
+  "Formatted YouTube Upload",
+  "10 engaging short clips per episode",
+  "Written social media captions",
+  "2-3 LinkedIn posts per episode",
+  "Content calendar and scheduling",
+  "Email & chat support",
 ]
 
 const scaleFeatures = [
   "Everything in Launch",
-  "YouTube Channel Growth – SEO titles, descriptions, and thumbnail support",
-  "Clip Creation – 20+ clips per episode, distributed across Shorts, Insta Reels, FB, LinkedIn",
-  "LinkedIn Authority Posts – 3–5 posts per week crafted from podcast insights",
-  "Hands-Off Posting & Scheduling – we publish everywhere for you",
-  "Engagement Boosting – hashtags, formatting, posting optimization",
-  "Performance Snapshot – monthly report of reach, engagement & growth",
-  "Monthly Strategy Call – refine messaging, content focus, and growth tactics",
-  "Priority Support – fast turnaround and direct access",
+  "YouTube SEO & growth support",
+  "20+ engaging short clips per episode",
+  "3-5 weekly LinkedIn authority posts",
+  "Hands-off posting & scheduling",
+  "Monthly performance report",
+  "Monthly strategy call",
+  "Priority support",
 ]
 
 export default function ServicePackagesSection() {
