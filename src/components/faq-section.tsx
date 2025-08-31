@@ -9,7 +9,7 @@ import { ChevronDown } from 'lucide-react'
 const faqs = [
   {
     question: "What exactly does MagnetPod Studios do, and how is it different from other podcast agencies?",
-    answer: "click here",
+    answer: "We’re a boutique agency that launches and scales podcasts with a focus on distribution. Built for Founders and Coaches.",
   },
   {
     question: "Why do founders launch podcasts?",
