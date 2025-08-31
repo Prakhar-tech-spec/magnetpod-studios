@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "What’s the typical turnaround time for each episode—from recording to going live?",
-    answer: "click here",
+    answer: "Our standard turnaround time from recording to release is typically 7 days, with flexibility for faster timelines when urgent.",
   },
   {
     question: "What are your pricing structures?",
