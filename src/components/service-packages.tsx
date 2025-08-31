@@ -5,7 +5,7 @@ import { Check, Rocket, TrendingUp } from 'lucide-react'
 import Link from "next/link"
 
 const launchFeatures = [
-  "Professional Podcast Editing (1-2 hr episodes)",
+  "Professional Podcast Editing",
   "Formatted YouTube Upload",
   "10 engaging short clips per episode",
   "Written social media captions",
@@ -44,6 +44,7 @@ export default function ServicePackagesSection() {
                 Launch Package
               </CardTitle>
               <CardDescription className="font-light text-foreground/60 pt-1">From podcast recording to a full week of content.</CardDescription>
+              <p className="text-sm font-light text-foreground/70 pt-2">(Up to 4 podcasts per month)</p>
             </CardHeader>
             <CardContent className="flex-grow">
               <ul className="space-y-3">
@@ -71,6 +72,7 @@ export default function ServicePackagesSection() {
                 Scaling Package
               </CardTitle>
               <CardDescription className="font-light text-foreground/60 pt-1">Your podcast transformed into a complete content engine.</CardDescription>
+               <p className="text-sm font-light text-foreground/70 pt-2">(Up to 4 podcasts per month)</p>
             </CardHeader>
             <CardContent className="flex-grow">
               <ul className="space-y-3">
