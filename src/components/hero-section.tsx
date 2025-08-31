@@ -63,7 +63,7 @@ export default function HeroSection() {
             </span>
           </h1>
           <p className="mt-8 max-w-2xl mx-auto text-lg sm:text-xl font-light text-foreground/70">
-            We help founders, podcasters, and coaches scale content strategies to attract quality clients and deepen relationships, either by starting a new podcast or optimizing an existing one.
+            We help founders, podcasters, and coaches scale content strategies to attract quality clients and deepen relationships, by optimizing an existing one.
           </p>
         </div>
       </div>
