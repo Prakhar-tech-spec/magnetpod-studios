@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "What distinguishes an episode that gets traction from one that doesn’t?",
-    answer: "click here",
+    answer: "Two things make a great podcast: guest quality and conversation quality. The gap in between? That’s where we shine—handling everything from repurposing content for LinkedIn and X, and grey-hat distribution strategies.",
   },
   {
     question: "Do you handle recording logistics if we prefer in-person interviews?",
