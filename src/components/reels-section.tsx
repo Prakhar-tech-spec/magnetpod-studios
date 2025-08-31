@@ -14,7 +14,7 @@ export default function ReelsSection() {
             We transform your long-form content into engaging, short-form videos ready for social media.
           </p>
         </div>
-        <div className="flex justify-center items-center gap-8">
+        <div className="flex justify-center items-center gap-12">
           {/* Left Mockup */}
           <div className="transform -rotate-12">
             <div className="w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20">
