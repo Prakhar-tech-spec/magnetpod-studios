@@ -14,46 +14,52 @@ export default function ReelsSection() {
             We transform your long-form content into engaging, short-form videos ready for social media.
           </p>
         </div>
-        <div className="relative h-[550px] flex justify-center items-center">
+        <div className="flex justify-center items-center gap-8">
           {/* Left Mockup */}
-          <div className="absolute w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20 transform -rotate-12 -translate-x-40">
-            <div className="w-full h-full bg-black rounded-[26px] overflow-hidden">
-              <Image
-                src="https://picsum.photos/270/480?random=1"
-                alt="Mobile mockup 1"
-                width={270}
-                height={480}
-                className="object-cover w-full h-full"
-                data-ai-hint="man talking"
-              />
+          <div className="transform -rotate-12">
+            <div className="w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20">
+              <div className="w-full h-full bg-black rounded-[26px] overflow-hidden">
+                <Image
+                  src="https://picsum.photos/270/480?random=1"
+                  alt="Mobile mockup 1"
+                  width={270}
+                  height={480}
+                  className="object-cover w-full h-full"
+                  data-ai-hint="man talking"
+                />
+              </div>
             </div>
           </div>
 
           {/* Center Mockup */}
-          <div className="relative w-[260px] h-[520px] bg-neutral-800 rounded-[40px] p-3 shadow-2xl shadow-secondary/20 z-10">
-              <div className="w-full h-full bg-black rounded-[28px] overflow-hidden">
-                  <Image
-                  src="https://picsum.photos/270/480?random=2"
-                  alt="Mobile mockup 2"
-                  width={270}
-                  height={480}
-                  className="object-cover w-full h-full"
-                  data-ai-hint="woman podcasting"
-                  />
-              </div>
+          <div className="relative z-10">
+            <div className="w-[260px] h-[520px] bg-neutral-800 rounded-[40px] p-3 shadow-2xl shadow-secondary/20">
+                <div className="w-full h-full bg-black rounded-[28px] overflow-hidden">
+                    <Image
+                    src="https://picsum.photos/270/480?random=2"
+                    alt="Mobile mockup 2"
+                    width={270}
+                    height={480}
+                    className="object-cover w-full h-full"
+                    data-ai-hint="woman podcasting"
+                    />
+                </div>
+            </div>
           </div>
 
           {/* Right Mockup */}
-          <div className="absolute w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20 transform rotate-12 translate-x-40">
-            <div className="w-full h-full bg-black rounded-[26px] overflow-hidden">
-              <Image
-                src="https://picsum.photos/270/480?random=3"
-                alt="Mobile mockup 3"
-                width={270}
-                height={480}
-                className="object-cover w-full h-full"
-                data-ai-hint="podcast guest"
-              />
+          <div className="transform rotate-12">
+            <div className="w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20">
+              <div className="w-full h-full bg-black rounded-[26px] overflow-hidden">
+                <Image
+                  src="https://picsum.photos/270/480?random=3"
+                  alt="Mobile mockup 3"
+                  width={270}
+                  height={480}
+                  className="object-cover w-full h-full"
+                  data-ai-hint="podcast guest"
+                />
+              </div>
             </div>
           </div>
         </div>
