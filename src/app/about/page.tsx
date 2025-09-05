@@ -2,28 +2,9 @@ import Header from '@/components/header'
 import FooterSection from '@/components/footer'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { CheckCircle, Heart, Rocket } from 'lucide-react'
 import TestimonialSection from '@/components/testimonial-section'
 import FaqSection from '@/components/faq-section'
-
-const values = [
-    {
-        icon: <Rocket className="w-8 h-8 text-primary" />,
-        title: "Client-Obsessed",
-        description: "Your success is our success. We are deeply committed to understanding your goals and delivering results that exceed expectations.",
-    },
-    {
-        icon: <CheckCircle className="w-8 h-8 text-secondary" />,
-        title: "Uncompromising Quality",
-        description: "From audio fidelity to strategic distribution, we uphold the highest standards to ensure your brand is represented with excellence.",
-    },
-    {
-        icon: <Heart className="w-8 h-8" style={{color: '#8acc98'}} />,
-        title: "Authentic Partnership",
-        description: "We work as an extension of your team, fostering transparent communication and a true partnership built on trust and mutual respect.",
-    },
-]
+import { Badge } from '@/components/ui/badge'
 
 export default function AboutPage() {
   return (
@@ -46,29 +27,25 @@ export default function AboutPage() {
           </div>
         </section>
         
-        {/* Our Story / Values Section */}
-        <section className="py-16 sm:py-24 bg-card/20">
+        {/* Our Story Section */}
+        <section className="py-16 sm:py-24 bg-black">
             <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-                 <div className="text-center mb-12">
-                    <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Our Story</h2>
-                    <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
-                        The principles that guide our work and partnerships.
-                    </p>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {values.map((value, index) => (
-                    <Card key={index} className="bg-card border-border/50 text-center p-2 transition-all duration-300 hover:border-secondary/50 hover:-translate-y-1">
-                    <CardHeader className="items-center">
-                        <div className="p-4 bg-muted/50 rounded-full mb-4">
-                        {value.icon}
-                        </div>
-                        <CardTitle className="font-normal text-2xl">{value.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="pt-2 font-light text-foreground/60">
-                        {value.description}
-                    </CardContent>
-                    </Card>
-                ))}
+                 <div className="bg-card/30 border border-border/50 rounded-3xl p-8 sm:p-12">
+                    <Badge className="bg-green-900/50 text-green-300 border border-green-700/60 mb-8">Our Story</Badge>
+                    <div className="space-y-6 text-foreground/80 text-lg font-light max-w-4xl">
+                        <p>
+                            When we started MagnetPod Studios, we'd seen too many promising podcasts stall before gaining traction. Shows would launch with excitement, strong guests, and sharp conversations—but soon lose momentum. Guest research became inconsistent. Editing slipped. Distribution lacked strategy. Good conversations went unheard.
+                        </p>
+                        <p className="font-medium text-foreground">
+                            We knew there was a better way.
+                        </p>
+                        <p>
+                            We built MagnetPod Studios to help tech companies and VCs launch and scale podcasts effectively. Our distributed team across 11 countries handles guest research, production, post-production, and strategic distribution.
+                        </p>
+                        <p className="font-medium text-foreground">
+                            Important voices deserve to be heard clearly. Our job is to ensure they are.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
