@@ -30,7 +30,7 @@ export default function ServicePackagesSection() {
     <section id="services" className="py-16 sm:py-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Find Your Perfect Fit</h2>
+          <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Find Your Perfect <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Fit</span></h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
             Flexible packages to launch or scale your podcast.
           </p>

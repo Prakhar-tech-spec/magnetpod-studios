@@ -24,7 +24,7 @@ export default function HowItWorksSection() {
     <section id="how-it-works" className="py-16 sm:py-24">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Our Proven Process</h2>
+          <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Our Proven <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Process</span></h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
             A streamlined workflow designed for quality and efficiency.
           </p>

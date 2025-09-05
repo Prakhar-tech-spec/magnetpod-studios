@@ -73,7 +73,7 @@ export default function ReelsSection() {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">
-            From Podcast to Viral Reels
+            From Podcast to Viral <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Reels</span>
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
             We transform your long-form content into engaging, short-form videos ready for social media.

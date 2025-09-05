@@ -60,7 +60,7 @@ export default function ClippingPage() {
         <section className="py-16 sm:py-24 bg-black">
             <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                  <div className="text-center mb-12">
-                    <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Your Content is Underperforming</h2>
+                    <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Your Content is <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Underperforming</span></h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
                         You're creating amazing long-form content, but its potential is trapped. One podcast episode can be a goldmine of dozens of shareable moments, but finding and producing them is a full-time job.
                     </p>
@@ -72,7 +72,7 @@ export default function ClippingPage() {
         <section className="py-16 sm:py-24 bg-card/20">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">The All-In-One Clipping Solution</h2>
+                    <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">The All-In-One Clipping <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Solution</span></h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
                         From raw recording to a full-funnel social media strategy. Here's what you get.
                     </p>
