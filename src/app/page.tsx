@@ -5,7 +5,6 @@ import HowItWorksSection from '@/components/how-it-works-section'
 import ServicePackagesSection from '@/components/service-packages'
 import FaqSection from '@/components/faq-section'
 import FooterSection from '@/components/footer'
-import ReelsSection from '@/components/reels-section'
 
 export default function Home() {
   return (

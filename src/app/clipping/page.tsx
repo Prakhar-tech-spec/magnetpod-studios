@@ -3,7 +3,7 @@ import ReelsSection from '@/components/reels-section'
 import FooterSection from '@/components/footer'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { Video, Film, Share2, TrendingUp, CheckCircle } from 'lucide-react'
+import { Video, Film, Share2, TrendingUp } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import ServicePackagesSection from '@/components/service-packages'
 import FaqSection from '@/components/faq-section'
@@ -86,10 +86,10 @@ export default function ClippingPage() {
                         {feature.icon}
                         </div>
                         <CardTitle className="font-normal text-2xl">{feature.title}</CardTitle>
-                        <CardContent className="pt-4 font-light text-foreground/60">
-                         {feature.description}
-                        </CardContent>
                     </CardHeader>
+                    <CardContent className="pt-2 font-light text-foreground/60">
+                        {feature.description}
+                    </CardContent>
                     </Card>
                 ))}
                 </div>
