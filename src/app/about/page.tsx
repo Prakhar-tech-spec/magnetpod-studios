@@ -40,7 +40,7 @@ export default function AboutPage() {
                             We knew there was a better way.
                         </p>
                         <p>
-                            We built MagnetPod Studios to help tech companies and VCs launch and scale podcasts effectively. Our distributed team across 11 countries handles guest research, production, post-production, and strategic distribution.
+                            We built MagnetPod Studios to help Founders and Coaches launch and scale podcasts effectively. Our distributed team across 11 countries handles guest research, production, post-production, and strategic distribution.
                         </p>
                         <p className="font-medium text-foreground">
                             Important voices deserve to be heard clearly. Our job is to ensure they are.
