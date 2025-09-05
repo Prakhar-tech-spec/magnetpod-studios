@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Video, Film, Share2, TrendingUp, CheckCircle } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import ServicePackagesSection from '@/components/service-packages'
+import FaqSection from '@/components/faq-section'
 
 
 const features = [
@@ -94,6 +96,8 @@ export default function ClippingPage() {
             </div>
         </section>
         
+        <ServicePackagesSection />
+        <FaqSection />
       </main>
       <FooterSection />
     </div>
