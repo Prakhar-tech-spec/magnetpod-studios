@@ -3,35 +3,9 @@ import FooterSection from '@/components/footer'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { CheckCircle, Users, Heart, Rocket } from 'lucide-react'
-import Image from 'next/image'
-
-const teamMembers = [
-  {
-    name: "Alex Johnson",
-    role: "Founder & Lead Strategist",
-    image: "https://picsum.photos/400/400?random=4",
-    dataAiHint: "man portrait",
-  },
-  {
-    name: "Samantha Carter",
-    role: "Head of Production",
-    image: "https://picsum.photos/400/400?random=5",
-    dataAiHint: "woman portrait",
-  },
-  {
-    name: "Michael Bay",
-    role: "Director of Clipping",
-    image: "https://picsum.photos/400/400?random=6",
-    dataAiHint: "man smiling",
-  },
-   {
-    name: "Jessica Miller",
-    role: "Client Relations",
-    image: "https://picsum.photos/400/400?random=7",
-    dataAiHint: "woman smiling",
-  },
-]
+import { CheckCircle, Heart, Rocket } from 'lucide-react'
+import TestimonialSection from '@/components/testimonial-section'
+import FaqSection from '@/components/faq-section'
 
 const values = [
     {
@@ -56,7 +30,7 @@ export default function AboutPage() {
     <div className="flex flex-col min-h-screen bg-black">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section */}
+        {/* About Us Hero Section */}
         <section className="relative py-24 sm:py-32 bg-black overflow-hidden">
              <div className="absolute inset-0 z-0">
                 <div className="absolute -top-20 -left-20 w-64 h-64 bg-secondary/20 rounded-full filter blur-3xl opacity-40 animate-blob"></div>
@@ -71,35 +45,12 @@ export default function AboutPage() {
             </p>
           </div>
         </section>
-
-        {/* Team Section */}
-        <section className="py-16 sm:py-24 bg-card/20">
-            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Meet the Minds Behind the Mic</h2>
-                    <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
-                        A dedicated team of strategists, producers, and creatives passionate about amplifying your voice.
-                    </p>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                    {teamMembers.map((member) => (
-                        <div key={member.name} className="text-center">
-                            <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-4">
-                                <Image src={member.image} alt={member.name} layout="fill" objectFit="cover" className="transition-transform duration-300 hover:scale-105" data-ai-hint={member.dataAiHint} />
-                            </div>
-                            <h3 className="text-xl font-normal text-foreground">{member.name}</h3>
-                            <p className="text-primary font-light">{member.role}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
         
-        {/* Our Values Section */}
-        <section className="py-16 sm:py-24 bg-black">
+        {/* Our Story / Values Section */}
+        <section className="py-16 sm:py-24 bg-card/20">
             <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
                  <div className="text-center mb-12">
-                    <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Our Core Values</h2>
+                    <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Our Story</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
                         The principles that guide our work and partnerships.
                     </p>
@@ -122,8 +73,11 @@ export default function AboutPage() {
             </div>
         </section>
 
+        {/* Testimonials Section */}
+        <TestimonialSection />
+
         {/* CTA Section */}
-        <section className="py-16 sm:py-24 bg-card/20">
+        <section className="py-16 sm:py-24 bg-black">
             <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
                  <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Ready to Amplify Your Voice?</h2>
                  <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
@@ -136,6 +90,9 @@ export default function AboutPage() {
                 </Button>
             </div>
         </section>
+
+        {/* FAQ Section */}
+        <FaqSection />
         
       </main>
       <FooterSection />
