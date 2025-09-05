@@ -32,18 +32,21 @@ const openPositions = [
         location: "Remote",
         department: "Production",
         description: "We are looking for a Lead Video Editor to oversee all post-production for our podcast clients. You'll lead a team of editors, set creative direction, and ensure every video is polished to perfection. Deep expertise in Adobe Premiere Pro, After Effects, and color grading is a must.",
+        salary: "$75,000 - $90,000",
     },
     {
         role: "Content Strategist",
         location: "Remote",
         department: "Marketing",
         description: "As a Content Strategist, you will be responsible for developing and executing content marketing strategies for our clients. You'll work on everything from social media campaigns to SEO-driven blog posts, turning podcast episodes into a full-funnel marketing asset.",
+        salary: "$65,000 - $80,000",
     },
     {
         role: "AI Prompt Engineer",
         location: "Remote",
         department: "Technology",
         description: "Join our AI team to build and refine the prompts that power our creative studio. You will collaborate with our developers and content team to push the boundaries of what's possible with generative AI in podcasting. A creative mind and a technical background are essential.",
+        salary: "$80,000 - $100,000",
     }
 ]
 
@@ -162,10 +165,16 @@ export default function CareersPage() {
                             </AccordionTrigger>
                             <AccordionContent className="font-light text-foreground/70 text-base pb-6">
                                 <p className="mb-6">{position.description}</p>
-                                <Button>
-                                    <PenTool className="mr-2 h-4 w-4" />
-                                    Apply for this role
-                                </Button>
+                                <div className="flex items-center justify-between">
+                                  <Button>
+                                      <PenTool className="mr-2 h-4 w-4" />
+                                      Apply for this role
+                                  </Button>
+                                  <div className="text-right">
+                                    <p className="text-sm font-light text-foreground/60">Salary</p>
+                                    <p className="font-medium text-lg text-primary">{position.salary}</p>
+                                  </div>
+                                </div>
                             </AccordionContent>
                         </AccordionItem>
                     ))}
@@ -178,5 +187,3 @@ export default function CareersPage() {
     </div>
   )
 }
-
-    
