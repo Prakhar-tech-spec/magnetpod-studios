@@ -32,6 +32,7 @@ const MenuIcon = () => (
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isPodcastingMenuOpen, setPodcastingMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black">
@@ -43,14 +44,21 @@ export default function Header() {
         </Link>
         
         <nav className="hidden md:flex items-center gap-6 text-sm bg-black border border-[#333333] rounded-full p-1">
-          <DropdownMenu>
+          <DropdownMenu open={isPodcastingMenuOpen} onOpenChange={setPodcastingMenuOpen}>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="flex items-center gap-1 text-foreground/80 font-light hover:bg-muted/50 hover:text-primary rounded-full px-5 py-1.5 uppercase tracking-wider text-xs">
+               <Button 
+                variant="ghost" 
+                className="flex items-center gap-1 text-foreground/80 font-light hover:bg-muted/50 hover:text-primary rounded-full px-5 py-1.5 uppercase tracking-wider text-xs"
+                onMouseEnter={() => setPodcastingMenuOpen(true)}
+              >
                 Podcasting
                 <ChevronDown className="w-4 h-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="bg-black border-border/40">
+            <DropdownMenuContent 
+              className="bg-black border-border/40"
+              onMouseLeave={() => setPodcastingMenuOpen(false)}
+            >
               <DropdownMenuItem asChild>
                 <Link href="/#services">Launch Package</Link>
               </DropdownMenuItem>
