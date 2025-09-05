@@ -7,7 +7,7 @@ export default function FooterSection() {
     { href: '/ai-studio', label: 'AI Studio' },
     { href: '/clipping', label: 'Clipping' },
     { href: '#faq', label: 'Case Studies' },
-    { href: '#', label: 'About Us' },
+    { href: '/about', label: 'About Us' },
     { href: '#', label: 'Careers' },
     { href: '#', label: 'Blogs' },
   ]
