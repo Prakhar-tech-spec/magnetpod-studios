@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import {
   Carousel,
   CarouselContent,
@@ -10,30 +9,21 @@ import {
 export default function ReelsSection() {
   const mockups = [
     {
-      src: "https://picsum.photos/270/480?random=1",
+      src: "https://res.cloudinary.com/dj88p3xio/video/upload/v1757055850/Sometimes_a_product_fails_not_because_it_was_bad_but_because_of_the_story_we_told_around_it.Nano_wasn_t_just_a_small_car_it_became_a_symbol_of_limitation._Not_because_of_its_size_but_because_we_kept_calling_it_affo_azltwx.mp4",
       alt: "Mobile mockup 1",
-      aiHint: "man talking",
       rotation: "-rotate-12",
-      width: 240,
-      height: 480,
       containerClass: "w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20"
     },
     {
-      src: "https://picsum.photos/270/480?random=2",
+      src: "https://res.cloudinary.com/dj88p3xio/video/upload/v1757055849/Tried_something_new_felt_very_excited_creating_this_let_me_know_what_you_think_about_this._Shou_ea20rt.mp4",
       alt: "Mobile mockup 2",
-      aiHint: "woman podcasting",
       rotation: "",
-      width: 260,
-      height: 520,
       containerClass: "w-[260px] h-[520px] bg-neutral-800 rounded-[40px] p-3 shadow-2xl shadow-secondary/20 relative z-10"
     },
     {
-      src: "https://picsum.photos/270/480?random=3",
+      src: "https://res.cloudinary.com/dj88p3xio/video/upload/v1757055849/videoplayback_vgqb1x.mp4",
       alt: "Mobile mockup 3",
-      aiHint: "podcast guest",
       rotation: "rotate-12",
-      width: 240,
-      height: 480,
       containerClass: "w-[240px] h-[480px] bg-neutral-800 rounded-[36px] p-2.5 shadow-2xl shadow-primary/20"
     },
   ]
@@ -55,13 +45,13 @@ export default function ReelsSection() {
             <div key={index} className={`transform ${mockup.rotation}`}>
               <div className={mockup.containerClass.replace('relative z-10', '')}>
                 <div className="w-full h-full bg-black rounded-[26px] overflow-hidden">
-                  <Image
+                  <video
                     src={mockup.src}
-                    alt={mockup.alt}
-                    width={mockup.width}
-                    height={mockup.height}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="object-cover w-full h-full"
-                    data-ai-hint={mockup.aiHint}
                   />
                 </div>
               </div>
@@ -78,13 +68,13 @@ export default function ReelsSection() {
                             <div className="p-1">
                                 <div className={mockup.containerClass}>
                                     <div className="w-full h-full bg-black rounded-[28px] overflow-hidden">
-                                        <Image
+                                        <video
                                             src={mockup.src}
-                                            alt={mockup.alt}
-                                            width={mockup.width}
-                                            height={mockup.height}
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
                                             className="object-cover w-full h-full"
-                                            data-ai-hint={mockup.aiHint}
                                         />
                                     </div>
                                 </div>
