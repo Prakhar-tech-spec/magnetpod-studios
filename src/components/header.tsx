@@ -18,7 +18,7 @@ import {
 
 const navLinks = [
   { href: '/ai-studio', label: 'AI STUDIO' },
-  { href: '#how-it-works', label: 'CLIPPING' },
+  { href: '/clipping', label: 'CLIPPING' },
   { href: '#faq', label: 'CASE STUDIES' },
 ]
 

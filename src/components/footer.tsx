@@ -5,7 +5,7 @@ export default function FooterSection() {
   const footerNavLinks = [
     { href: '/#services', label: 'Podcasting' },
     { href: '/ai-studio', label: 'AI Studio' },
-    { href: '#reels', label: 'Clipping' },
+    { href: '/clipping', label: 'Clipping' },
     { href: '#faq', label: 'Case Studies' },
     { href: '#', label: 'About Us' },
     { href: '#', label: 'Careers' },
