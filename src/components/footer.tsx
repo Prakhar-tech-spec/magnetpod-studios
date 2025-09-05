@@ -8,7 +8,7 @@ export default function FooterSection() {
     { href: '/clipping', label: 'Clipping' },
     { href: '#faq', label: 'Case Studies' },
     { href: '/about', label: 'About Us' },
-    { href: '#', label: 'Careers' },
+    { href: '/careers', label: 'Careers' },
     { href: '#', label: 'Blogs' },
   ]
 
@@ -46,3 +46,5 @@ export default function FooterSection() {
     </footer>
   )
 }
+
+    
