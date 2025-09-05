@@ -46,7 +46,7 @@ export default function TestimonialSection() {
     <section id="testimonials" className="py-16 sm:py-24 bg-card/20">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Trusted by Top Podcasters</h2>
+          <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Trusted by Top <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Podcasters</span></h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
             Don't just take our word for it. Here's what our clients have to say.
           </p>

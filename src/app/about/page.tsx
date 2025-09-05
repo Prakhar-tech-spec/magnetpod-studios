@@ -56,7 +56,7 @@ export default function AboutPage() {
         {/* CTA Section */}
         <section className="py-16 sm:py-24 bg-black">
             <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-                 <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Ready to Amplify Your Voice?</h2>
+                 <h2 className="text-3xl sm:text-4xl font-normal tracking-tight text-foreground">Ready to Amplify Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Voice?</span></h2>
                  <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
                     Let's discuss how we can partner to build and scale your podcast into a powerful asset for your brand.
                  </p>
