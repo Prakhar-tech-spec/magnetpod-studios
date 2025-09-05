@@ -78,7 +78,11 @@ export default function AiStudioPage() {
       <Header />
       <main className="flex-grow container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-normal tracking-tight text-foreground">AI Podcast Studio</h1>
+          <h1 className="inline-block text-4xl sm:text-5xl font-normal tracking-tight text-foreground/90">
+            <span className="relative inline-block bg-gradient-to-r from-primary/30 to-primary/10 px-4 pl-6 py-2 border-l-4 border-primary">
+              AI Podcast Studio
+            </span>
+          </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-foreground/70">
             Answer a few questions and let our AI generate your next great podcast idea.
           </p>
