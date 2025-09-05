@@ -17,7 +17,7 @@ import {
 
 
 const navLinks = [
-  { href: '#services', label: 'AI STUDIO' },
+  { href: '/ai-studio', label: 'AI STUDIO' },
   { href: '#how-it-works', label: 'CLIPPING' },
   { href: '#faq', label: 'CASE STUDIES' },
 ]
@@ -52,10 +52,10 @@ export default function Header() {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-black border-border/40">
               <DropdownMenuItem asChild>
-                <Link href="#services">Launch Package</Link>
+                <Link href="/#services">Launch Package</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="#services">Scale Package</Link>
+                <Link href="/#services">Scale Package</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -84,8 +84,8 @@ export default function Header() {
                  <DropdownMenuSub>
                    <DropdownMenuSubTrigger>Podcasting</DropdownMenuSubTrigger>
                    <DropdownMenuSubContent className="bg-black border-border/40">
-                     <DropdownMenuItem asChild><Link href="#services">Launch Package</Link></DropdownMenuItem>
-                     <DropdownMenuItem asChild><Link href="#services">Scale Package</Link></DropdownMenuItem>
+                     <DropdownMenuItem asChild><Link href="/#services">Launch Package</Link></DropdownMenuItem>
+                     <DropdownMenuItem asChild><Link href="/#services">Scale Package</Link></DropdownMenuItem>
                    </DropdownMenuSubContent>
                 </DropdownMenuSub>
                 {navLinks.map((link) => (

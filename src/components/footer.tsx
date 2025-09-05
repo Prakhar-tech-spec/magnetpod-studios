@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 export default function FooterSection() {
   const footerNavLinks = [
-    { href: '#services', label: 'Podcasting' },
-    { href: '#how-it-works', label: 'AI Studio' },
+    { href: '/#services', label: 'Podcasting' },
+    { href: '/ai-studio', label: 'AI Studio' },
     { href: '#reels', label: 'Clipping' },
     { href: '#faq', label: 'Case Studies' },
     { href: '#', label: 'About Us' },
