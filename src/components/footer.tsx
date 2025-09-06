@@ -8,7 +8,7 @@ export default function FooterSection() {
     { href: '/clipping', label: 'Clipping' },
     { href: '#faq', label: 'Case Studies' },
     { href: '/about', label: 'About Us' },
-    { href: '/careers', label: 'Careers' },
+    { href: 'https://magnetpodstudios.notion.site/MagnetPod-Job-Board-266025cbfdfd808b93dfd6d3b1eb891f?pvs=74', label: 'Careers' },
     { href: '#', label: 'Blogs' },
   ]
 
@@ -29,7 +29,7 @@ export default function FooterSection() {
           
           <div className="flex flex-wrap gap-x-8 gap-y-4">
             {footerNavLinks.map((link) => (
-              <Link key={`${link.href}-${link.label}`} href={link.href} className="text-foreground/80 hover:text-primary transition-colors font-light text-sm">
+              <Link key={`${link.href}-${link.label}`} href={link.href} className="text-foreground/80 hover:text-primary transition-colors font-light text-sm" {...(link.label === 'Careers' ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
                 {link.label}
               </Link>
             ))}
