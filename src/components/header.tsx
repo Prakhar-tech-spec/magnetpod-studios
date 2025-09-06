@@ -19,7 +19,7 @@ import {
 const navLinks = [
   { href: '/ai-studio', label: 'AI STUDIO' },
   { href: '/clipping', label: 'CLIPPING' },
-  { href: '#faq', label: 'CASE STUDIES' },
+  { href: 'https://magnetpodstudios.notion.site/MagnetPod-Job-Board-266025cbfdfd808b93dfd6d3b1eb891f?pvs=74', label: 'CAREERS' },
 ]
 
 const MenuIcon = () => (
@@ -69,7 +69,12 @@ export default function Header() {
           </DropdownMenu>
 
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="transition-colors hover:text-primary text-foreground/80 font-light px-5 py-1.5 rounded-full hover:bg-muted/50 uppercase tracking-wider text-xs">
+            <Link 
+              key={link.href} 
+              href={link.href} 
+              className="transition-colors hover:text-primary text-foreground/80 font-light px-5 py-1.5 rounded-full hover:bg-muted/50 uppercase tracking-wider text-xs"
+              {...(link.label === 'CAREERS' ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            >
               {link.label}
             </Link>
           ))}
@@ -98,7 +103,12 @@ export default function Header() {
                 </DropdownMenuSub>
                 {navLinks.map((link) => (
                   <DropdownMenuItem key={link.href} asChild>
-                    <Link href={link.href}>{link.label}</Link>
+                    <Link 
+                      href={link.href}
+                      {...(link.label === 'CAREERS' ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    >
+                      {link.label}
+                    </Link>
                   </DropdownMenuItem>
                 ))}
                 <DropdownMenuSeparator />
