@@ -45,7 +45,7 @@ export default function ClippingPage() {
               Stop letting your long-form content collect dust. We dive into your podcasts and extract high-impact, viral-potential clips, perfectly formatted and strategically deployed to grow your brand.
             </p>
              <Button className="mt-8 rounded-full border border-white/80 bg-black hover:bg-secondary hover:text-secondary-foreground uppercase tracking-wider text-xs px-8 py-6" variant="outline" asChild>
-                <Link href="#contact">
+                <Link href="https://cal.com/magnetpod-studio-intro-call/30min" target="_blank">
                     <Video className="mr-2 h-4 w-4" />
                     Get Your Clips
                 </Link>

@@ -77,7 +77,7 @@ export default function Header() {
 
         <div className="flex items-center gap-4">
            <Button className="hidden md:flex rounded-full border border-white/80 bg-black hover:bg-secondary hover:text-secondary-foreground uppercase tracking-wider text-xs" variant="outline" asChild>
-            <Link href="#contact">Book a call</Link>
+            <Link href="https://cal.com/magnetpod-studio-intro-call/30min" target="_blank">Book a call</Link>
           </Button>
 
           <div className="md:hidden">
@@ -104,7 +104,7 @@ export default function Header() {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <Button className="w-full" variant="secondary" asChild>
-                    <Link href="#contact">Book a call</Link>
+                    <Link href="https://cal.com/magnetpod-studio-intro-call/30min" target="_blank">Book a call</Link>
                   </Button>
                 </DropdownMenuItem>
               </DropdownMenuContent>

@@ -60,7 +60,7 @@ export default function ServicePackagesSection() {
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="secondary" className="w-full" asChild><Link href="#contact">Get Started</Link></Button>
+              <Button variant="secondary" className="w-full" asChild><Link href="https://cal.com/magnetpod-studio-intro-call/30min" target="_blank">Get Started</Link></Button>
             </CardFooter>
           </Card>
 
@@ -88,7 +88,7 @@ export default function ServicePackagesSection() {
               </p>
             </CardContent>
             <CardFooter>
-              <Button className="w-full" asChild><Link href="#contact">Choose Scaling</Link></Button>
+              <Button className="w-full" asChild><Link href="https://cal.com/magnetpod-studio-intro-call/30min" target="_blank">Choose Scaling</Link></Button>
             </CardFooter>
           </Card>
         </div>

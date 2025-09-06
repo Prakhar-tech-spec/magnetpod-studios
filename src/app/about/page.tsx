@@ -61,7 +61,7 @@ export default function AboutPage() {
                     Let's discuss how we can partner to build and scale your podcast into a powerful asset for your brand.
                  </p>
                  <Button className="mt-8 rounded-full border border-white/80 bg-black hover:bg-secondary hover:text-secondary-foreground uppercase tracking-wider text-xs px-8 py-6" variant="outline" asChild>
-                    <Link href="/#contact">
+                    <Link href="https://cal.com/magnetpod-studio-intro-call/30min" target="_blank">
                         Book a Discovery Call
                     </Link>
                 </Button>

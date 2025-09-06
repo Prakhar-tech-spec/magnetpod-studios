@@ -166,9 +166,11 @@ export default function CareersPage() {
                             <AccordionContent className="font-light text-foreground/70 text-base pb-6">
                                 <p className="mb-6">{position.description}</p>
                                 <div className="flex items-center justify-between">
-                                  <Button>
-                                      <PenTool className="mr-2 h-4 w-4" />
-                                      Apply for this role
+                                  <Button asChild>
+                                      <Link href="https://cal.com/magnetpod-studio-intro-call/30min" target="_blank">
+                                        <PenTool className="mr-2 h-4 w-4" />
+                                        Apply for this role
+                                      </Link>
                                   </Button>
                                   <div className="text-right">
                                     <p className="text-sm font-light text-foreground/60">Salary</p>
