@@ -167,7 +167,7 @@ export default function CareersPage() {
                                 <p className="mb-6">{position.description}</p>
                                 <div className="flex items-center justify-between">
                                   <Button asChild>
-                                      <Link href="https://cal.com/magnetpod-studio-intro-call/30min" target="_blank">
+                                      <Link href="#">
                                         <PenTool className="mr-2 h-4 w-4" />
                                         Apply for this role
                                       </Link>
